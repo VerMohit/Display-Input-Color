@@ -1,4 +1,6 @@
-const ColorForm = ( { setColor } ) => {
+import './ColorForm.css'
+
+const ColorForm = ( { color, setColor } ) => {
     return (
         <form
             onSubmit={(e) => e.preventDefault()}    
@@ -10,7 +12,7 @@ const ColorForm = ( { setColor } ) => {
             type="text"
             required
             placeholder="Add color name"
-            // value={ color }
+            value={ color }
             onChange={(e) => setColor(e.target.value)}
         />
         </form>

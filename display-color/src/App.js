@@ -8,11 +8,16 @@ function App() {
   const [color, setColor] = useState('')
 
   return (
-    <>
+    <div
+      className="App"
+    >
         
-        <ColorDisplay color={color === "" ? 'white' : color}/>
-        <ColorForm setColor={setColor}/>
-    </>
+        <ColorDisplay color={color}/>
+        <ColorForm 
+          color={color}
+          setColor={setColor}
+          />
+    </div>
 
   );
 }

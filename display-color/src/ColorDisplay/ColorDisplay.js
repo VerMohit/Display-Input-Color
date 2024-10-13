@@ -4,12 +4,16 @@ import './ColorDisplay.css';
 const ColorDisplay = ( { color } ) => {
     return (
         <div 
-            className="colorBox" 
+            className="colorDisplay" 
             style={ { backgroundColor: color } }
         >
-            { color === "white" ? 'Empty Value' : color }
+            { color ? color : 'Empty Value' }
         </div>
     );
+}
+
+ColorDisplay.defaultProps = {
+    color: "Empty Color"
 }
 
 export default ColorDisplay;

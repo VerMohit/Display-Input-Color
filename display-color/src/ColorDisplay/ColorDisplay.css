@@ -2,13 +2,14 @@
     --box-dim: 400px
 }
 
-.colorBox {
+.colorDisplay {
     width: var(--box-dim);
     min-height: var(--box-dim);
     border: 1px black solid;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    border-radius: 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    text-align: center;
 }
